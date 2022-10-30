@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #E8E8E8;
+    background-image: url('../images/bg.PNG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+/* *{
+    margin: 0;
+} */
+.navbar{
+    /* width: calc(100% - 51em); */
+    width: 55%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 100%;
+}
+a>div>img{
+    width: 40px;
+    height: 40px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+.text-navbar:hover{
+    border-bottom: 5px solid#F3DE47;
+}
+a>div{
+    flex-grow: 1;
+    align-items: center;
+    display: grid;
+    place-content: center;
+    margin-top: 7px
+}
+.navbar-li{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: auto;
+}
+.dashboard{
+    
+    background-color:#F3DE48;
+    
+}
+.my_bookings{
+    background-color:#CEDE73;
+}
+.accounts{
+    background-color:#EC919A;
+}
+.recharge{
+    background-color:#90D0D2;
+}
+.sales{
+    
+    background-color:#D0A7D0;
+}
+.my_profile{
+    background-color:#E69F67;
+}
+.left-first{
+    width: 300px;
+    background-color: white;
+}
+.card svg{
+    width: 17px !important;
+    height: 17px !important;
+}
+.left-first>div{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    align-items: center;
+    color: black;
+}
+.left-first>div:hover{
+    color: #06285D;
+    border-left:5px solid #06285D;
+}
+.left-first a{
+        text-decoration: none;
+        color: inherit;
+}
+.itineraries,.view-cancellations,.travel-calender{
+    border-bottom: solid 2px #EDEDED;
+}
+.left-second{
+    width: 300px;
+    background-color: white;
+}
+.left-second img{
+    width: 20px;
+    height: 20px;
+}
+.left-second a{
+        text-decoration: none;
+        color: black;
+        margin-left: 14px
+}
+.left-second>div{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+.print-e-ticket,.download,.email-e-ticket,.customer-invoice{
+    border-bottom: solid 2px #EDEDED;
+}
+.left-second-img{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+.left-second-print-img{
+    background-color: #73CB7E;
+}
+.left-second-download-img{
+    background-color: #EC6671;
+}
+.left-second-email-img{
+    background-color: #2BC5FE;
+}
+.left-second-customer-img{
+    background-color: #FFEF6B;
+}
+.left-second-agent-img{
+    background-color: #F59AA2;
+}
+.container{
+    padding-top: 1em;
+    width: calc(100% - 27em);
+    margin: auto;
+    font-size: 15px;
+}
+@media(max-width:992px){
+  .navbar{
+    flex-direction: column;
+    /* width: calc(100% - 5em); */
+    width: 68%;
+  }
+  .container{
+    width: calc(100% - 5em);
+  }
+  .left-first,.left-second{
+    width: 100%;
+  }
+  ul{
+    justify-content: space-evenly;
+  }
+}
